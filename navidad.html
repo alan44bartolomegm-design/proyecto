@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Página Navideña</title>
+
+ <style>
+        body {
+            background-image: url(https://img.freepik.com/vector-premium/fondo-blanco-como-nieve-colgador-adornos-navidenos-diseno-invierno-cubierto-nieve-navidad_725943-326.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+    /* Contenido principal */
+    .contenido{
+        flex:1;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        padding:30px;
+        gap:50px;
+    }
+
+    /* Texto en el centro */
+    .texto{
+        .texto h1 {
+            font-size: 100px;
+        }
+        .texto p {
+            font-size: 20px;
+        }
+        text-align:center;
+        flex:100;
+    }
+
+    .texto h1{
+        font-size:3rem;
+    }
+
+    /* Video a la derecha */
+    .video{
+        flex:1;
+        display:flex;
+        justify-content:flex-end;
+    }
+
+    .video iframe{
+        width:500px;
+        height:280px;
+        border:none;
+        border-radius:15px;
+    }
+
+    /* Botones abajo */
+     .botonera{
+            margin-top: 50px;
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            margin: 0 auto;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+    }
+
+    .boton{
+        display:inline-block;
+        padding:15px 30px;
+        margin:10px;
+        background:#d62828;
+        color:white;
+        text-decoration:none;
+        border-radius:10px;
+        font-size:18px;
+        transition:0.3s;
+    }
+
+    .boton:hover{
+        background:#ff4d4d;
+    }
+</style>
+
+</head>
+<body>
+
+    <div class="contenido">
+
+        <div class="texto">
+            <h1>lo que mas me gusta de la navidad</h1>
+            <p>lo que mas me gusta de la navidad es esa sencasion de nostalgia que ma hace sentir año con año, cuando los que quedamos de familia nos reunimos para comer una cena navideña y pensar en la vez que fuimos niños y esa sencasion de abrir los regalos de navidad y despues siendo mas maduro ver como la mesa se va vaciando, la navidad es mi epoca favorita del año</p>
+        </div>
+
+        <div class="video">
+            <iframe src="https://www.youtube.com/watch?v=Rljz1jXLsaY"
+            allowfullscreen>
+            </iframe>
+        </div>
+
+    </div>
+
+   <div class="botonera">
+
+        <button onclick="window.location.href='proyecto.html'">
+            Página principal
+        </button>
+
+        <button onclick="window.location.href='halowen.html'">
+            Halloween
+        </button>
+
+    </div>
+
+</body>
+</html>
